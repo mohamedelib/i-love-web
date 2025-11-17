@@ -1,0 +1,10 @@
+
+@font-face {
+  font-family: "pixelfont";
+  src: url(../PixelFont-Regular.otf) format(opentype);
+}
+
+p{
+    font-family: "pixelfont";
+}
+

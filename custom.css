@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "pixelfont";
+  src: url(../PixelFont-Regular.otf) format(opentype);
+}
+
+h1{
+    font-family: "pixelfont";
+    text-align: center;
+}
