@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout 11/19/25</title>
+</head>
+
+<body>
+<h2> Waarom heeft elke input een label nodig? </h2>
+<p>Een label koppelt tekst aan een input zodat gebruikers (ook met screenreaders) weten wat ze moeten invullen. Het vergroot toegankelijkheid en klikbaarheid.</p>
+<h2>Wat doe je met de attributen type, autocomplete, inputmode en enterkeyhint?</h2>
+<p>type  bepaalt het soort invoer (text, email, number, date, etc.).
+
+autocomplete  helpt de browser eerdere gegevens automatisch invullen.
+
+inputmode  bepaalt welk toetsenbord verschijnt op mobiel 
+
+enterkeyhint bepaalt de tekst op de Enter-knop op mobiel 
+</p>
+<h2>Wat doen fieldsets en legends in een formulier?</h2>
+fieldset groepeert gerelateerde inputs logisch bij elkaar.
+
+legend geeft een titel of label voor die groep.
+<h2>Wat doen required, maxlength, min, max, step?</h2>
+required veld mag niet leeg blijven.
+
+maxlength maximum aantal tekens.
+
+min / max minimale en maximale waarde bij numbers/dates.
+
+step stapgrootte 
+<h2>Welke input pseudo-classes ken je nog niet? Maak met allemaal een demo'tje</h2>
+<input placeholder="Typ iets">
+<style>
+input:placeholder-shown { border:2px dashed orange; }
+</style>
+<input value="Alleen lezen" readonly>
+<style>
+input:read-only { background:#ddd; }
+</style>
+<input type="number" min="1" max="10">
+<style>
+input:in-range { border:2px solid green; }
+input:out-of-range { border:2px solid red; }
+</style>
+</body>

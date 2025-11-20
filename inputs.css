@@ -1,0 +1,23 @@
+.email:user-invalid{
+    color: red;
+}
+.email:blank{
+    background:red;
+}
+
+.text:blank{
+    background:red;
+}
+.text:user-invalid{
+    color: red;
+
+}   
+
+input[type="date"] {
+    border: 10px solid red;
+}
+
+input[type="date"]:open {
+    border-color: blue;
+
+}          
