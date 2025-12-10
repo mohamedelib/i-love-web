@@ -1,0 +1,13 @@
+input:valid {
+    border:solid 1em green;
+}
+
+button {
+    display:none;
+}
+
+form:valid  {
+    background-color: pink;
+
+    /* display:inline-block; */
+}

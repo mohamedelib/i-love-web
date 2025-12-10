@@ -21,3 +21,7 @@ input[type="date"]:open {
     border-color: blue;
 
 }          
+
+input:valid {
+    border:solid 1em green;
+}
