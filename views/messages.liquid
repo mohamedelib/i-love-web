@@ -1,0 +1,15 @@
+<h1>Berichten</h1>
+
+<ul>
+  {% for message in messages %}
+    <li>{{ message }}</li>
+  {% endfor %}
+</ul>
+
+<form action="/berichten" method="POST">
+  <label>
+    Message
+    <textarea name="message"></textarea>
+  </label>
+  <button type="submit">Laat je reactie achter</button>
+</form>
