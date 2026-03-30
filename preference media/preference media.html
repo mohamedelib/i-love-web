@@ -9,7 +9,7 @@
     margin: 0 auto;
     justify-content: center;
     max-width: 300px;
-    background-color: black;
+    background-color: white;
     color: orangered;
 
     @media (prefers-reduced-motion: no-preference) {
@@ -17,6 +17,12 @@
         translate: 0 100px;
       }
       transition: 0.5s;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      background-color: #111;
+      color: #eee;
+      outline-color: #eee;
     }
   }
 </style>
