@@ -1,0 +1,22 @@
+<div class="card">
+  <h1>Hoi</h1>
+</div>
+<style>
+  .card {
+    display: flex;
+    padding: 2em;
+    outline: 2px solid orangered;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 300px;
+    background-color: black;
+    color: orangered;
+
+    @media (prefers-reduced-motion: no-preference) {
+      &:hover {
+        translate: 0 100px;
+      }
+      transition: 0.5s;
+    }
+  }
+</style>
