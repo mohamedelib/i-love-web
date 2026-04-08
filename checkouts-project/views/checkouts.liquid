@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkouts</title>
+  </head>
+  <body>
+    <header>
+      <h1>Mijn Checkouts</h1>
+      <a href="/checkouts/nieuw">Nieuwe checkout</a>
+    </header>
+    <main>
+      <ol>
+        {% for checkout in checkouts %}
+          <li>
+            <article>
+              <header>
+                <time datetime="{{ checkout.datum | date: '%B %d, %Y' }}">{{ checkout.datum }}</time>
+              </header>
+              <p>{{ checkout.reflectie }}</p>
+              <form method="POST" action="/checkouts/delete">
+                <input type="hidden" name="index" value="{{ checkout.index }}">
+                <button style="background: none; border: none; cursor: pointer;" type="submit">
+                  <img src="/trash.png">
+                </button>
+              </form>
+            </article>
+          </li>
+        {% endfor %}
+      </ol>
+    </main>
+  </body>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #1a1a1a;
+      color: #f5f5f5;
+      font-family: sans-serif;
+      line-height: 1.6;
+      padding: 2rem;
+      max-width: 50rem;
+      margin: 0 auto;
+    }
+
+    h1 {
+      color: #800020;
+      margin-bottom: 2rem;
+    }
+
+    ol {
+      list-style: none;
+    }
+
+    article {
+      border-left: 4px solid #800020;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    time {
+      color: #800020;
+      font-weight: bold;
+      display: block;
+    }
+
+    a {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: #800020;
+      color: #f5f5f5;
+      text-decoration: none;
+      margin-bottom: 2rem;
+    }
+
+    a:hover {
+      background: #600018;
+    }
+  </style>
+</html>
