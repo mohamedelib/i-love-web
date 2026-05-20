@@ -1,0 +1,32 @@
+<!doctype html>
+<title>View Transitions</title>
+<style>
+  button {
+    background: #008c45;
+    color: #fff;
+    view-transition-name: card-transition;
+    &.gekocht {
+      font-size: 2em;
+      background: #cd212a;
+      position: fixed;
+      right: 3em;
+      bottom: 3em;
+      scale: 1.5;
+    }
+  }
+</style>
+<script type="module">
+  const btn = document.querySelector("button");
+  btn.addEventListener("click", function () {
+    if (document.startViewTransition) {
+      document.startViewTransition(function () {
+        btn.textContent = "Gekocht!";
+        btn.classList.add("gekocht");
+      });
+    } else {
+      btn.textContent = "Gekocht!";
+      btn.classList.add("gekocht");
+    }
+  });
+</script>
+<button>Koop een pizza!</button>
