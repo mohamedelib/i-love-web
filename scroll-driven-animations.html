@@ -1,0 +1,43 @@
+<!doctype html>
+<title>Scroll-driven animations</title>
+<style>
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      translate: 0 4em;
+    }
+    100% {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+  p {
+    font-size: 10vw;
+  }
+  span {
+    display: inline-block;
+    animation: appear;
+    animation-timeline: view();
+  }
+</style>
+<p>
+  <span>Lorem</span> <span>ipsum</span> <span>dolor</span> <span>sit</span>
+  <span>amet,</span> <span>consectetur</span> <span>adipisicing</span>
+  <span>elit,</span> <span>sed</span> <span>do</span> <span>eiusmod</span>
+  <span>tempor</span> <span>incididunt</span> <span>ut</span>
+  <span>labore</span> <span>et</span> <span>dolore</span> <span>magna</span>
+  <span>aliqua.</span> <span>Ut</span> <span>enim</span> <span>ad</span>
+  <span>minim</span> <span>veniam,</span> <span>quis</span> <span>nostrud</span>
+  <span>exercitation</span> <span>ullamco</span> <span>laboris</span>
+  <span>nisi</span> <span>ut</span> <span>aliquip</span> <span>ex</span>
+  <span>ea</span> <span>commodo</span> <span>consequat.</span> <span>Duis</span>
+  <span>aute</span> <span>irure</span> <span>dolor</span> <span>in</span>
+  <span>reprehenderit</span> <span>in</span> <span>voluptate</span>
+  <span>velit</span> <span>esse</span> <span>cillum</span> <span>dolore</span>
+  <span>eu</span> <span>fugiat</span> <span>nulla</span> <span>pariatur.</span>
+  <span>Excepteur</span> <span>sint</span> <span>occaecat</span>
+  <span>cupidatat</span> <span>non</span> <span>proident,</span>
+  <span>sunt</span> <span>in</span> <span>culpa</span> <span>qui</span>
+  <span>officia</span> <span>deserunt</span> <span>mollit</span>
+  <span>anim</span> <span>id</span> <span>est</span> <span>laborum.</span>
+</p>
