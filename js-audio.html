@@ -1,0 +1,12 @@
+<!doctype html>
+<title>Audio met JS</title>
+<script type="module">
+  // Laad het geluid in
+
+  const button = document.querySelector("button");
+  const audio = new Audio("sound.mp3");
+  button.addEventListener("click", function () {
+    audio.play();
+  });
+</script>
+<button id="btn">Koop die pizza</button>
